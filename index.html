@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Example 1</title>
+  <link type="text/css" rel="stylesheet" href="https://bootswatch.com/3/darkly/bootstrap.css" />
+  <style>
+    .panel-heading:after {
+      clear:both;
+      display: block;
+      content:"";
+    }
+    .panel-title {
+      padding-left:0;
+    }
+  </style>
+</head>
+
+<body class="container">
+
+  <header id="masthead" class="jumbotron">
+    <h1>Example File</h1>
+    <p>Deciding whether or not to decide</p>
+  </header>
+  <main class="row">
+    <div id="info" class="col-sm-6">
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>Item</th>
+            <th>Cost/item</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>XS</td>
+            <td>$5</td>
+          </tr>
+          <tr>
+            <td>S</td>
+            <td>$6</td>
+          </tr>
+          <tr>
+            <td>M</td>
+            <td>$7</td>
+          </tr>
+          <tr>
+            <td>L</td>
+            <td>$8</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div id="shopping-list" class="shopping-list col-sm-6">
+      <h2>Order Form</h2>
+      <form>
+        <div class="alert alert-info">
+          <p id="message">Info will appear here.</p>
+        </div>
+        <ul class="list-unstyled row">
+          <li class="form-group col-sm-3">
+            <label for="qty">Quantity</label>
+            <input id="qty" name="qty" class="form-control" type="text" value="0" />
+          </li>
+          <li class="form-group col-sm-9">
+            <label for="size">Size</label>
+            <select id="size" name="size" class="form-control">
+              <option value="xs">XS - $5</option>
+              <option value="s">S - $6</option>
+              <option value="m">M - $7</option>
+              <option value="l">L - $8</option>
+            </select>
+          </li>
+        </ul>
+        <div class="row">
+          <p class="col-sm-6">Subtotal: $<span id="subtotal">0.00</span> 
+          </p>
+          <button class="col-sm-6 btn btn-success">Add to cart</button>
+        </div>
+      </form>
+    </div>
+  </main>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="scripts.js"></script>
+</body>
+
+</html>
